@@ -11,6 +11,7 @@ main {
 }
 
 .sticker-mobile {
+    display: flex;
     width: 300px;
 }
 
