@@ -1,0 +1,84 @@
+main {
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.sticker-mobile {
+    width: 300px;
+}
+
+.sticker-desktop {
+    display: none;
+}
+
+.bloco-icone-texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-principal {
+
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.apelido {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+}
+
+.bloco-icones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.icone {
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sticker-desktop {
+        display: flex;
+        width: 300px;
+    }
+
+    .sticker-mobile {
+        display: none;
+    }
+
+    .apelido {
+        text-align: left;
+    }
+
+    .bloco-icone-texto {
+        display: flex;
+        align-items: start;
+    }
+
+    .icone:nth-child(1) {
+        margin-left: 0;
+    }
+}
